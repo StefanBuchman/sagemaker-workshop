@@ -161,29 +161,6 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 
 ![Open Notebook](./images/jupyter-homepage.png)
 
-#### 4. Cloning the Labs
-
-In the notebook, top right, New → Terminal
-
-![New terminal screenshot](./images/1-new-terminal.png)
-
-```
-cd SageMaker
-git clone https://github.com/benthurgood/sagemaker4research-workshop.git
-```
-**Note:** You can right click the terminal to paste the git clone command:
-
-![New terminal screenshot](./images/2-paste-git-clone.png)
-
-![New terminal screenshot](./images/3-ran-git-clone.png)
-
-Go back to the notebook folders tab and you will now see the sagemaker4research-workshop folder.
-
-![New terminal screenshot](./images/4-sagemaker4research-foler-visible.png)
-
-**Note:** We will use this same approach (git clone from the terminal) for loading the optional labs (5-7) into your SageMaker notebooks
-
-
 ## Labs
 
 The labs for this workshop have been chosen to highlight capabilities of Amazon SageMaker that are most relevant to scientific research.  They are intended to guide students from out-of-the-box capabilities, to using custom frameworks and code, and utilizing large external datasets.
