@@ -46,6 +46,7 @@ This workshop is divided into the following modules. It is recommended that you 
 - [Labs](#labs)
 
   1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
+  2. [Customer Churn](./Labs/02-customer-churn.md)
 
 ## Preliminaries
 
