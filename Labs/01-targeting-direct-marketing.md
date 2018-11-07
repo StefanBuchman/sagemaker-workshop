@@ -11,7 +11,7 @@ This notebook presents an example problem to predict if a customer will enroll f
     5. Evaluating the effectiveness of the model
     6. Setting the model up to make on-going predictions
 
-# Direction
+# Directions
 
 1. In your notebook instance, click on the top level folder 'SageMaker Examples'.
 2. Navigate to 'xgboost_direct_marketing_sagemaker.ipynb' under 'Introduction to Applying Machine Learning'
