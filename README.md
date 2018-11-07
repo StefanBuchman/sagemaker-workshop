@@ -166,6 +166,7 @@ Use the console or AWS CLI to create an Amazon S3 bucket. Keep in mind that your
 The labs for this workshop have been chosen to highlight capabilities of Amazon SageMaker that are most relevant to scientific research.  They are intended to guide students from out-of-the-box capabilities, to using custom frameworks and code, and utilizing large external datasets.
 
 1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
+2. [Customer Churn](./Labs/02-customer-churn.md)
 
     Direct marketing, either through mail, email, phone, etc., is a common tactic to acquire customers. Because resources and a customer's attention is limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer. Predicting those potential customers based on readily available information like demographics, past interactions, and environmental factors is a common machine learning problem.
 
