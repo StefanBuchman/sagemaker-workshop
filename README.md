@@ -45,10 +45,7 @@ This workshop is divided into the following modules. It is recommended that you 
 
 - [Labs](#labs)
 
-  1. [Digit Classification with Linear Learner](./Labs/01-digit-classification-linear-learner.md)
-  2. [Distributed Training with TensorFlow](./Labs/02-distributed-training-tensorflow.md)
-  3. [Bringing Your Own Model](./Labs/03-bring-your-own-model.md)
-  4. [Using Public Datasets](./Labs/04-using-public-datasets.md)
+  1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
 
 ## Preliminaries
 
@@ -191,77 +188,9 @@ Go back to the notebook folders tab and you will now see the sagemaker4research-
 
 The labs for this workshop have been chosen to highlight capabilities of Amazon SageMaker that are most relevant to scientific research.  They are intended to guide students from out-of-the-box capabilities, to using custom frameworks and code, and utilizing large external datasets.
 
-1. [Digit Classification with Linear Learner](./Labs/01-digit-classification-linear-learner.md)
+1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
 
-    In this lab we will introduce you to Amazon Sagemaker using the Amaazon-provided Linear Learner algorithm to perform binary classification of images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/). Specifically, we'll train a model to identify whether or not a digit is a "0". In doing so, we will demonstrate how to use a Jupyter notebook and the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) to create a script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint - completing a full machine learning workflow end-to-end.
-
-2. [Distributed Training with TensorFlow](./Labs/02-distributed-training-tensorflow.md)
-
-    In this lab we will be using images of handwritten digits from the [MNIST Database](http://yann.lecun.com/exdb/mnist/) to demonstrate how to perform distributed training using SageMaker. Using a convolutional neural network model based on the [TensorFlow MNIST Example](https://github.com/tensorflow/models/tree/master/official/mnist), we will demonstrate how to use a Jupyter notebook and the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) to create your own script to pre-process data, train a model, create a SageMaker hosted endpoint, and make predictions against this endpoint. The model will predict what the handwritten digit is in the image presented for prediction. Besides demonstrating a "bring your own script" for TensorFlow use case, the example also showcases how easy it is to set up a cluster of multiple instances for model training in SageMaker.
-
-3. [Bringing Your Own Model](./Labs/03-bring-your-own-model.md)
-
-    A crucial aspect to scientific research is  building new tools / methods along the way to making new discoveries.  For machine learning problems the code that implements a specialized algorithm could be quite complex, or special framework additions are needed.  Amazon SageMaker provides the flexibility to bring your own algorithms and models and train and host them in the same way as built-in algorithms.  In this lab, we'll explore how to integrate a decision tree algorithm written using the [https://scikit-learn.org](scikit-learn) machine learning package for Python into SageMaker.
-
-4. [Using Public Datasets](./Labs/04-using-public-datasets.md)
-
-    Machine learning is a data driven process.  Sharing key datasets publicly allows smart minds around the world to perform novel analyses and generate new insights.  In this lab, we will use the [1000 Genomes Project](https://aws.amazon.com/1000genomes/) dataset - a collection of DNA sequence variations from over 1000 individuals.  We will apply unsupervised learning via the Amazon-provided K-Means algorithm to group the geographic location of sequences based on their variant information.
-
-
-## Optional Labs 5-7
-Depending on time you can do one or more of these labs (5-7). Choose the ones that interest you.
-
-
-### Lab 5: Satellite Imagery
-
-Git to clone: https://github.com/developmentseed/label-maker
-Notebook is under examples → nets → SageMaker_mx-lenet.ipynb
-
-Dataset is already available in these s3 buckets (use the one that corresponds to the region your notebook is in):
-* btgood-sagemaker4research-us-west-2
-* btgood-sagemaker4research-us-east-1
-
-*Optional* (approx 20 minutes)
-If you'd like to create the dataset you can follow:
-https://developmentseed.org/blog/2018/01/19/sagemaker-label-maker-case/
-
-Discuss: After completion: Why can't you get very good accuracy in the validation step?
-
-[Troubleshooting Tips](./Labs/Optional/05-satellite-images.md)
-
-
-### Lab 6: Superradiance
-
-Open terminal in Jupyter
-```
-cd Sagemaker
-mkdir simulate-quantum-systems
-cd simulate-quantum-systems
-git clone https://github.com/emkessler/sagemaker.git
-```
-Open the notebook
-
-**Notes:**
-* Select kernel: conda_tensorflow_p27 (this is very important; python3.6 will not work without code changes)
-* You need to change the S3 bucket to a bucket you have given the SageMaker execution role access to in both:
-    * the upload cell
-    * the training job cell
-
-i.e. replace all instances of 'sagemaker-kessle31' with your bucket name
-
-More info:
-https://aws.amazon.com/blogs/machine-learning/simulate-quantum-systems-on-amazon-sagemaker/
-
-
-### Lab 7: Principal Component Analysis
-
-**Warning:** Minimal testing by facilitators, advanced students only
-
-https://aws.amazon.com/blogs/machine-learning/perform-a-large-scale-principal-component-analysis-faster-using-amazon-sagemaker/
-
-This post walks you through benchmarking PCA across the built-in SageMaker algorithm, SparkML, and Scikit-learn on a fairly large dataset.
-
-This will appeal to researchers who would be inclined to know about the internal workings of SparkML and Scikit-Learn and curious to see the comparison.
+    Direct marketing, either through mail, email, phone, etc., is a common tactic to acquire customers. Because resources and a customer's attention is limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer. Predicting those potential customers based on readily available information like demographics, past interactions, and environmental factors is a common machine learning problem.
 
 
 ## Cleanup
