@@ -47,6 +47,7 @@ This workshop is divided into the following modules. It is recommended that you 
 
   1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
   2. [Customer Churn](./Labs/02-customer-churn.md)
+  3. [Direct Marketing with Hyperparameter Tuning](./Labs/03-hyper-churn.md)
 
 ## Preliminaries
 
@@ -168,6 +169,7 @@ The labs for this workshop have been chosen to highlight capabilities of Amazon 
 
 1. [Targeting Direct Marketing](./Labs/01-targeting-direct-marketing.md)
 2. [Customer Churn](./Labs/02-customer-churn.md)
+3. [Direct Marketing with Hyperparameter Tuning](./Labs/03-hyper-churn.md)
 
     Direct marketing, either through mail, email, phone, etc., is a common tactic to acquire customers. Because resources and a customer's attention is limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer. Predicting those potential customers based on readily available information like demographics, past interactions, and environmental factors is a common machine learning problem.
 
